@@ -1,0 +1,90 @@
+/* กำหนดรูปแบบพื้นฐานของเว็บไซต์ */
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #17243b;
+    line-height: 1.8;
+}
+
+/* ส่วนหัวเว็บไซต์ */
+header {
+    background-color: #101d38;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 5px solid #d4af37;
+}
+
+header h1 {
+    font-size: 45px;
+    letter-spacing: 5px;
+}
+
+header h2 {
+    color: #d4af37;
+}
+
+/* เมนูนำทาง */
+nav {
+    background-color: #17243b;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+/* ส่วนเนื้อหา */
+section {
+    background-color: white;
+    width: 85%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 12px;
+    border-top: 4px solid #d4af37;
+}
+
+/* หัวข้อ */
+section h2 {
+    color: #b08d25;
+    text-align: center;
+}
+
+/* รูปภาพ */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ส่วนท้ายเว็บไซต์ */
+footer {
+    background-color: #101d38;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-top: 4px solid #d4af37;
+}
+
+/* ปรับเว็บไซต์สำหรับโทรศัพท์ */
+@media screen and (max-width: 600px) {
+    section {
+        width: 92%;
+        padding: 20px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+}
