@@ -1,90 +1,218 @@
-/* กำหนดรูปแบบพื้นฐานของเว็บไซต์ */
+css
+
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #17243b;
-    line-height: 1.8;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F8FF;
+    color: #263B50;
 }
 
-/* ส่วนหัวเว็บไซต์ */
+css
+
 header {
-    background-color: #101d38;
+    background: linear-gradient(135deg, #0878D1, #19A7F5, #65D1FF);
     color: white;
+    padding: 65px 20px;
     text-align: center;
-    padding: 60px 20px;
-    border-bottom: 5px solid #d4af37;
+    border-bottom: 5px solid #B5E8FF;
 }
 
 header h1 {
-    font-size: 45px;
-    letter-spacing: 5px;
+    font-size: 42px;
+    letter-spacing: 4px;
+    margin: 0;
 }
 
 header h2 {
-    color: #d4af37;
+    font-size: 25px;
+    margin: 10px 0;
 }
 
-/* เมนูนำทาง */
+header p {
+    font-size: 17px;
+    margin: 5px 0;
+}
+
+css
+
 nav {
-    background-color: #17243b;
-    text-align: center;
+    background-color: #0756A3;
     padding: 15px;
+    text-align: center;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 15px;
+    margin: 8px 12px;
+    font-weight: bold;
 }
 
-/* ส่วนเนื้อหา */
+nav a:hover {
+    color: #65D1FF;
+}
+
+css
+
 section {
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 1000px;
+    width: 90%;
     background-color: white;
-    width: 85%;
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 30px;
-    border-radius: 12px;
-    border-top: 4px solid #d4af37;
+    border-radius: 15px;
+    border-top: 5px solid #19A7F5;
+    box-shadow: 0 4px 15px rgba(0, 100, 200, 0.10);
+
 }
 
-/* หัวข้อ */
-section h2 {
-    color: #b08d25;
+css
+
+section h2 { 
+    color: #0756A3;
     text-align: center;
+    font-size: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #B5E8FF;
+
 }
 
-/* รูปภาพ */
+section h3 {
+    color: #0878D1;
+}
+
+css
+
+.card {
+    background-color: #F0F8FF;
+    padding: 20px;
+    margin: 18px 0;
+    border-radius: 12px;
+    border: 1px solid #B5DFFF;
+
+}
+
+.card p {
+    margin: 8px 0;
+
+}
+
+css
+
+#activities .card,
+#certificates .card,
+#achievements .card {
+    text-align: center;
+    background-color: #F5FAFF;
+    transition: transform 0.3s;
+
+}
+
+#activities .card:hover,
+#certificates .card:hover,
+#achievements .card:hover {
+    transform: translateY(-5px);
+
+}
+
+css
+
+#skills ul {
+    padding-left: 25px;
+
+}
+
+#skills li {
+    margin: 10px 0;
+    color: #263B50;
+
+}
+
+css
+
+#goal {
+    background-color: #E5F4FF;
+    text-align: center;
+
+}
+
+#goal p {
+    font-size: 17px;
+
+}
+
+css
+
 img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+    margin: 10px 0;
+
 }
 
-/* ส่วนท้ายเว็บไซต์ */
+css
+
+a {
+    color: #0878D1;
+}
+
+a:hover {
+    color: #19A7F5;
+
+}
+
+css
+
 footer {
-    background-color: #101d38;
+    background-color: #0756A3;
     color: white;
     text-align: center;
-    padding: 25px;
-    border-top: 4px solid #d4af37;
+    padding: 30px 15px;
+    border-top: 5px solid #65D1FF;
+
 }
 
-/* ปรับเว็บไซต์สำหรับโทรศัพท์ */
-@media screen and (max-width: 600px) {
-    section {
-        width: 92%;
-        padding: 20px;
-    }
+footer p {
+    margin: 8px 0;
 
+}
+
+footer a {
+    color: #B5E8FF;
+
+}
+
+css
+
+@media screen and (max-width: 600px) {
+    header {
+        padding: 45px 15px;    
+    }
+    header h1 {
+        font-size: 30px;
+    }
+    header h2 {
+        font-size: 21px;
+    }
+    section {
+        width: 94%;
+        padding: 18px;
+        margin: 18px auto;
+    }
+    section h2 {
+        font-size: 21px;
+    }
     nav a {
         display: block;
-        margin: 8px;
+        margin: 10px;
     }
+
 }
