@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #eef6ff;
-    color: #263b53;
+    color: #263238;
 
 }
 
@@ -57,7 +57,7 @@ section {
 /* หัวข้อแต่ละส่วน */
 
 section h2 {
-    color: #087cf0;
+    color: #0757a6;
     font-size: 25px;
     border-left: 5px solid #42b6ff;
     padding-left: 12px;
