@@ -1,6 +1,7 @@
 * {  box-sizing: border-box;}
 
 body {
+
     font-family: Arial, sans-serif;
     line-height: 1.8;
     margin: 0;
@@ -10,7 +11,7 @@ body {
 
 }
 
-css
+/* ส่วนหัวเว็บไซต์ */
 
 header {
     background: linear-gradient(135deg, #087cf0, #42b6ff);
@@ -40,7 +41,7 @@ header p {
 
 }
 
-css
+/* ส่วนเนื้อหาหลัก */
 
 section {
     background-color: white;
@@ -53,7 +54,7 @@ section {
 
 }
 
-css
+/* หัวข้อแต่ละส่วน */
 
 section h2 {
     color: #087cf0;
@@ -70,7 +71,7 @@ section h3 {
 
 }
 
-css
+/* หัวข้อหลักกิจกรรม */
 
 #projects > h2 {
     color: #0757a6;
@@ -79,7 +80,7 @@ css
 
 }
 
-css
+/* ชื่อกิจกรรมย่อย */
 
 #projects .card h3 {
     color: #438edb;
@@ -87,7 +88,7 @@ css
 
 }
 
-css
+/* การ์ดผลงานและกิจกรรม */
 
 .card {
     background-color: #f4f9ff;
@@ -105,7 +106,7 @@ css
 
 }
 
-css
+/* รูปภาพ */
 
 img {
     display: block;
@@ -116,14 +117,14 @@ img {
 
 }
 
-css
+/* รายการข้อมูล */
 
 ul {
     padding-left: 25px;
 
 }
 
-css
+/* ส่วนท้ายเว็บไซต์ */
 
 footer {
     background: #0757a6;
@@ -140,9 +141,10 @@ footer a {
 
 }
 
-css
+/* รองรับโทรศัพท์และแท็บเล็ต */
 
 @media screen and (max-width: 600px) {
+
     header {
         padding: 35px 15px;
 
