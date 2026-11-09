@@ -188,3 +188,12 @@ footer a {
     }
 
 }
+    .profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #42b6ff;
+    margin: 0 auto 20px;
+
+}
