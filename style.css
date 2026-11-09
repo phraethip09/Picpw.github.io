@@ -197,51 +197,63 @@ footer a {
     margin: 0 auto 20px;
 
 }
-/* รูปภาพโปรไฟล์ 2 คน */
+/* =================================
+
+   รูปโปรไฟล์ 2 คน ซ้ายและขวา
+
+================================= */
 
 .profile-container {
 
     display: flex;
 
-    justify-content: center;
+    justify-content: space-between;
 
     align-items: flex-start;
 
-    gap: 25px;
+    gap: 30px;
 
-    flex-wrap: wrap;
+    width: 100%;
 
-    margin: 25px auto;
+    max-width: 750px;
+
+    margin: 30px auto;
 
 }
 
 .profile-item {
 
-    width: 200px;
+    width: 48%;
 
     text-align: center;
 
-    background: #FFF0F6;
+    background-color: #FFF0F6;
 
-    padding: 15px;
+    padding: 20px;
 
-    border-radius: 15px;
+    border-radius: 18px;
 
     border: 1px solid #F8D5E5;
 
+    box-shadow: 0 5px 15px rgba(214, 51, 132, 0.10);
+
 }
 
-.profile-img {
+.profile-item img {
 
-    width: 160px;
+    width: 100%;
 
-    height: 180px;
+    max-width: 230px;
+
+    height: 250px;
 
     object-fit: cover;
 
-    border-radius: 12px;
+    border-radius: 15px;
 
     border: 3px solid #F062A5;
+
+    margin: 0 auto;
 
 }
 
@@ -249,8 +261,38 @@ footer a {
 
     color: #D63384;
 
+    font-size: 18px;
+
     font-weight: bold;
 
-    margin-bottom: 0;
+    margin: 12px 0 0;
+
+}
+
+/* รองรับโทรศัพท์และแท็บเล็ต */
+
+@media screen and (max-width: 600px) {
+
+    .profile-container {
+      gap: 12px;
+
+    }
+
+    .profile-item {
+
+        width: 50%;
+        padding: 10px;
+
+    }
+
+    .profile-item img {
+        height: 170px;
+
+    }
+
+    .profile-item p {
+        font-size: 15px;
+
+    }
 
 }
