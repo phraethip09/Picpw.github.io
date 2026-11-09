@@ -296,3 +296,22 @@ footer a {
     }
 
 }
+/* กรอบของแต่ละส่วน */
+
+section {
+
+    background-color: white;
+
+    max-width: 1000px;
+
+    width: 90%;
+
+    margin: 30px auto;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 5px 18px rgba(214, 51, 132, 0.10);
+
+}
